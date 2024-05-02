@@ -1,0 +1,84 @@
+/* For Single Product Page  */
+
+.modal-body {
+    display: flex;
+    gap: 30px;
+}
+
+.human-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+}
+
+.human-body img {
+    width: 50px;
+}
+
+.arms img {
+    max-height: 90px;
+}
+
+img.body-part.shoulder {
+    width: 110px;
+}
+
+.arms {
+    width: 90px;
+    justify-content: space-between;
+    display: flex;
+}
+
+.arms img {
+    /* max-height: 90px; */
+    width: 25px;
+}
+
+img.body-part.chest {
+    margin-top: -90px;
+}
+
+.arms img {
+    /* max-height: 90px; */
+    width: 25px;
+    height: 88px;
+}
+
+img.body-part.legs {
+    width: 54px;
+    margin-top: -2px;
+}
+
+/* For the modal */
+.measurement-form {
+    display: flex;
+    justify-content: center;
+    z-index: 999;
+    position: absolute;
+    left: 30%;
+    background-color: white;
+    padding: 40px;
+    border: 2px solid rgb(186, 184, 184);
+    top: -100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: top 0.5s ease;
+}
+
+.mesurement-related {
+    background-color: #f3f3f3d1 !important;
+    color: black !important;
+    padding: 5px 10px !important;
+    font-size: 14px !important;
+    border: 1px solid #c7c7c7 !important;
+    margin: 10px 0px !important;
+}
+
+.mesurement-related2 {
+    background-color: #f3f3f3d1 !important;
+    color: black !important;
+    padding: 5px 10px !important;
+    font-size: 14px !important;
+    margin: 10px 0px !important;
+}

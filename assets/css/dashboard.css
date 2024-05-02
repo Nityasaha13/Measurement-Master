@@ -1,0 +1,19 @@
+/* Dashboard */
+
+.settings-button {
+  padding: 20px;
+  border: 2px solid gray;
+  background-color: #ededed;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  font-size: 16px;
+}
+
+.submit-btn input {
+  padding: 3px 15px;
+  color: white;
+  background-color: #3939ff;
+  border: 2px solid #3939ff;
+}
