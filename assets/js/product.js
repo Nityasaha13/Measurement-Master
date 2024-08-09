@@ -1,29 +1,34 @@
-jQuery(document).ready(function ($) {
-  
-  var showFormButton = document.getElementById('show-measurement-form');
-  var showFormButton2 = document.getElementById('show-measurement-form2');
-  var measurementForm = document.getElementById('measurement-form');
+jQuery(document).ready(function($) {
+
+  var showFormButtons = $('#show-form-btn1, #show-form-btn2');
+  var measurementForm = $('#measurement-details-form');
+  var closeBtn = $('#close-form-btn');
+  var overlay = $('#overlay');
 
   function handleButtonClick() {
-    if (measurementForm.style.top === '-100%') {
-        measurementForm.style.top = '0';
-        highlightInputs();
-    } else {
-        measurementForm.style.top = '-100%';
-    }
+      var currentTop = measurementForm.css('display');
+      
+      if (currentTop === 'none') {
+        overlay.fadeIn();
+        measurementForm.css('display', 'block');
+        highlightInputs(); 
+      } else {
+        measurementForm.css('display', 'none');
+        overlay.fadeOut();
+      }
   }
 
-  showFormButton.addEventListener('click', handleButtonClick);
-  showFormButton2.addEventListener('click', handleButtonClick);
+  closeBtn.on('click', handleButtonClick);
+  showFormButtons.on('click', handleButtonClick);
+  overlay.on('click', handleButtonClick);
 
-  document.getElementById('measurement-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-    measurementForm.style.top = '-100%';
+  $('#measurement-form').on('submit', function(event) {
+      event.preventDefault();
+      measurementForm.css('display', 'none');
   });
-  
-  // highlightInputs();
-  
+
 });
+
 
 function highlightInputs() {
   highlightWaist();
@@ -32,7 +37,7 @@ function highlightInputs() {
 }
 
 function inputBoxChecked() {
-  document.getElementById('show-measurement-form').checked = true;
+  document.getElementById('show-form-btn1').checked = true;
 }
 
 function highlightWaist() {

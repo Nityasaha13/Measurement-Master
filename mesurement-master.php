@@ -1,9 +1,11 @@
 <?php
 /*
 Plugin Name: Measurement Master
-Description: This plugin provides measurement functionalities.
+Plugin URI:        https://codesocials.com/measurement-master/
+Description: This plugin provides measurement functionalities for your shop or fashion store.
 Version: 1.0
 Author: Nitya Saha
+Author URI:        https://codesocials.com/nitya-gopal-saha/
 */
 
 
@@ -142,3 +144,4 @@ function measurement_master_settings_page()
     </div>
 <?php
 }
+
