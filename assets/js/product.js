@@ -42,62 +42,57 @@ function inputBoxChecked() {
 
 function highlightWaist() {
   var waistInput = document.getElementById("waist");
-  var humanBodyImage = document.getElementById("waist-img");
+  var humanBodyImage = document.getElementById("human-stomach-part");
 
   if (waistInput.value.trim() !== "") {
-    humanBodyImage.style.border = "2px solid red";
+    humanBodyImage.style.fill = "#ff7d16";
   } else {
-    humanBodyImage.style.border = "0px solid #ccc";
+    humanBodyImage.style.fill = "#57c9d5";
   }
 
   waistInput.addEventListener("input", function () {
     if (waistInput.value.trim() !== "") {
-      humanBodyImage.style.border = "2px solid red";
+      humanBodyImage.style.fill = "#ff7d16";
     } else {
-      humanBodyImage.style.border = "0px solid #ccc";
+      humanBodyImage.style.fill = "#57c9d5";
     }
   });
 }
 
 function highlightChest() {
   var chestInput = document.getElementById("chest");
-  var humanBodyImage = document.getElementById("chest-img");
+  var humanBodyImage = document.getElementById("human-cheast-part");
 
   if (chestInput.value.trim() !== "") {
-    humanBodyImage.style.border = "2px solid red";
+    humanBodyImage.style.fill = "#ff7d16";
   } else {
-    humanBodyImage.style.border = "0px solid #ccc";
+    humanBodyImage.style.fill = "#57c9d5";
   }
 
   chestInput.addEventListener("input", function () {
     if (chestInput.value.trim() !== "") {
-      humanBodyImage.style.border = "2px solid red";
+      humanBodyImage.style.fill = "#ff7d16";
     } else {
-      humanBodyImage.style.border = "0px solid #ccc";
+      humanBodyImage.style.fill = "#57c9d5";
     }
   });
 }
 
 function highlightArm() {
   var sleevesInput = document.getElementById("sleeves");
-  var humanBodyImage = document.getElementById("arm-img");
-  var humanBodyImage2 = document.getElementById("arm-img-2");
+  var humanBodyImage = document.getElementById("human-arm-part");
 
   if (sleevesInput.value.trim() !== "") {
-    humanBodyImage.style.border = "2px solid red";
-    humanBodyImage2.style.border = "2px solid red";
+    humanBodyImage.style.fill = "#ff7d16";
   } else {
-    humanBodyImage.style.border = "0px solid #ccc";
-    humanBodyImage2.style.border = "0px solid #ccc";
+    humanBodyImage.style.fill = "#57c9d5";
   }
 
   sleevesInput.addEventListener("input", function () {
     if (sleevesInput.value.trim() !== "") {
-      humanBodyImage.style.border = "2px solid red";
-      humanBodyImage2.style.border = "2px solid red";
+      humanBodyImage.style.fill = "#ff7d16";
     } else {
-      humanBodyImage.style.border = "0px solid #ccc";
-      humanBodyImage2.style.border = "0px solid #ccc";
+      humanBodyImage.style.fill = "#57c9d5";
     }
   });
 }

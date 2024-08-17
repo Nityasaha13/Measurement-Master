@@ -9,6 +9,9 @@ Author URI:        https://codesocials.com/nitya-gopal-saha/
 */
 
 
+require_once('includes/components/human-body.php');
+
+
 register_activation_hook(__FILE__, 'measurement_master_activate');
 function measurement_master_activate()
 {
