@@ -1,5 +1,7 @@
 <?php
 
+if ( ! defined( 'ABSPATH' ) ) exit;
+
 // Add custom form after add to cart button
 add_action('woocommerce_after_add_to_cart_button', 'custom_measurement_form');
 function custom_measurement_form()
