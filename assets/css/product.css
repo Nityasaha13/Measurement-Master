@@ -5,52 +5,6 @@
     gap: 30px;
 }
 
-.human-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
-}
-
-.human-body img {
-    width: 50px;
-}
-
-.arms img {
-    max-height: 90px;
-}
-
-img.body-part.shoulder {
-    width: 110px;
-}
-
-.arms {
-    width: 90px;
-    justify-content: space-between;
-    display: flex;
-}
-
-.arms img {
-    /* max-height: 90px; */
-    width: 25px;
-}
-
-img.body-part.chest {
-    margin-top: -90px;
-}
-
-.arms img {
-    /* max-height: 90px; */
-    width: 25px;
-    height: 88px;
-}
-
-img.body-part.legs {
-    width: 54px;
-    margin-top: -2px;
-}
-
 /* For the modal */
 .measurement-popup-body {
     display: flex !important;
@@ -109,4 +63,62 @@ button.mesurement-form-submit {
     background-color: rgb(0 0 0 / 76%);
     display: none;
     z-index: 998;
+}
+
+
+/* Human Body */
+.human-body {
+    width: 207px;
+    position: relative;
+    /* padding-top: 240px; */
+    height: 260px;
+    display: block;
+    margin: 20px auto;
+}
+.human-body svg:hover {
+    cursor: pointer;
+}
+.human-body svg:hover path {
+    fill: #ff7d16;
+}
+.human-body svg {
+    position: absolute;
+    left: 50%;
+    fill: #57c9d5;
+}
+.human-body svg.head {
+    margin-left: -28.5px;
+    top: -6px;
+    height: 55px;
+}
+.human-body svg.shoulder {
+    margin-left: -54.5px;
+    top: 45px;
+    height: 30px;
+}
+.human-body svg.arm {
+    margin-left: -78px;
+    top: 70px;
+    height: 73px;
+}
+.human-body svg.cheast {
+    margin-left: -43.5px;
+    top: 56px;
+    height: 27px;
+}
+.human-body svg.stomach {
+    margin-left: -37.5px;
+    top: 82px;
+    height: 65px;
+}
+.human-body svg.legs {
+    margin-left: -45.5px;
+    top: 129px;
+    z-index: 9999;
+    height: 168px;
+}
+.human-body svg.hands {
+    margin-left: -102.5px;
+    top: 140px;
+    height: 24px;
 }
