@@ -13,6 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 require_once('components/human-body.php');
 require_once('includes/activation-notice.php');
 require_once('includes/styles-and-scripts.php');
+require_once('includes/the-measurement-form.php');
 require_once('settings-page.php');
 require_once('dashboard-page.php');
 
@@ -33,7 +34,7 @@ function measurement_master_deactivate()
 //Check the functionality is on or not, if on than it will show in the product page
 $plugin_enabled = get_option('enable_plugin');
 if ($plugin_enabled == "on") {
-    require_once('includes/plugin-functions.php');
+    require_once('includes/plugin-functions-setting.php');
 }
 
 
@@ -57,9 +58,4 @@ function measurement_master_menu()
     );
 }
 add_action('admin_menu', 'measurement_master_menu');
-
-
-
-
-
 
